@@ -7,8 +7,8 @@ $produtos = [
     4 => ["nome" => "Um siri fazendo barra", "preco" => "9,99", "descricao" => "Um siri fazendo barra.", "imagem" => "siri_barra.webp"],
     5 => ["nome" => "A Pedra (Classic)", "preco" => "1999,99", "descricao" => "Edição limitada clássica de A Pedra fazendo sua mais conhecida faceta.", "imagem" => "a_pedra01.jpg"],
     6 => ["nome" => "Sigma Picture 01", "preco" => "49,99", "descricao" => "Primeira pictura relatada capturada de um sigma em seu habitat natural.", "imagem" => "sigma01.webp"],
-    7 => ["nome" => "", "preco" => "", "descricao" => "", "imagem" => ""],
-    8 => ["nome" => "", "preco" => "", "descricao" => "", "imagem" => ""],
+    7 => ["nome" => "Gato calvo (calvo)", "preco" => "24,99", "descricao" => "Um gato calvado.", "imagem" => "gato_calvo.jpg"],
+    8 => ["nome" => "Cachorro calvo (calvo)", "preco" => "29,99", "descricao" => "Um cachorro calvado.", "imagem" => "cachorro_calvo.jpg"],
     9 => ["nome" => "", "preco" => "", "descricao" => "", "imagem" => ""]
 ];
 

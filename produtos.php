@@ -9,14 +9,14 @@ include_once './includes/_header.php';
 <div class="container">
     <div class="row mt-5">
         <?php
-            for($i=0; $i < 6; $i++){
+            foreach($produtos as $key => $value){
         ?>
         <div class="card m-3" style="width: 18rem;">
-            <img src="./content/<?php echo$produtos[$i]["imagem"] ?>" class="card-img-top" alt="...">
+            <img src="./content/<?php echo($value["imagem"]) ?>" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title"><?php echo($produtos[$i]["nome"]) ?></h5>
-                <p class="card-text"><?php echo($produtos[$i]["descricao"]) ?></p>
-                <a href="produto-detalhe.php?id=<?php echo $i ?>" class="btn btn-primary">Ver</a>
+                <h5 class="card-title"><?php echo($value["nome"]) ?></h5>
+                <p class="card-text"><?php echo($value["descricao"]) ?></p>
+                <a href="produto-detalhe.php?id=<?php echo $key ?>" class="btn btn-primary">Ver</a>
             </div>
         </div>
         <?php
@@ -24,6 +24,7 @@ include_once './includes/_header.php';
         ?>
     </div>
 </div>
+
 <?php
 // include do footer
 include_once './includes/_footer.php';
