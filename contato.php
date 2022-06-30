@@ -35,7 +35,7 @@ include_once './includes/_header.php';
 
 
 <?php
-if (isset($_POST["txtNome"]) && isset($_POST["txtTel"]) && isset($_POST["txtEmail"]) and isset($_POST["txtMensagem"])){
+if (isset($_POST["txtNome"],$_POST["txtTel"],$_POST["txtEmail"],$_POST["txtMensagem"])){
     $nome = strtoupper($_POST["txtNome"]);
     $mensagem = strtoupper($_POST["txtMensagem"]);
     $tel = strtoupper($_POST["txtTel"]);
