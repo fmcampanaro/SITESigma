@@ -35,7 +35,7 @@ include_once './includes/_header.php';
 
 
 <?php
-if (isset($_POST["txtNome"],$_POST["txtTel"],$_POST["txtEmail"],$_POST["txtMensagem"])){
+if ( isset($_POST["txtNome"]) && !is_null($_POST["txtTel"]) ){
     $nome = strtoupper($_POST["txtNome"]);
     $mensagem = strtoupper($_POST["txtMensagem"]);
     $tel = strtoupper($_POST["txtTel"]);
@@ -45,7 +45,6 @@ if (isset($_POST["txtNome"],$_POST["txtTel"],$_POST["txtEmail"],$_POST["txtMensa
     echo $email ."<br>";
     echo $mensagem ."<br>";
 }
-
 
 
 
