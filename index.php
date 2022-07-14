@@ -1,7 +1,6 @@
 <?php
 // include do footer
 include_once './includes/_banco.php';
-include_once './includes/_dados.php';
 include_once './includes/_head.php';
 include_once './includes/_header.php';
 ?>
@@ -11,6 +10,18 @@ include_once './includes/_header.php';
     <h1>Ofertas</h1>
     <div class="row mt-5">
         <?php
+
+            $sql = "SELECT * FROM categorias WHERE ativo = 1";
+
+            $exec = mysqli_query($conn ,$sql);
+
+            $numProdutos = mysqli_num_rows($exec);
+
+            while($dados = mysqli_fetch_assoc($exec)){
+                echo "<h1>". $dados["Nome"] . "</h1>";
+            }
+
+
             for($i=0; $i < 3; $i++){
         ?>
         <div class="card m-3" style="width: 18rem;">
