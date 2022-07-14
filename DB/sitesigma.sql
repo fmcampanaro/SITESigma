@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 07-Jul-2022 às 16:40
+-- Tempo de geração: 14-Jul-2022 às 17:37
 -- Versão do servidor: 10.4.17-MariaDB
 -- versão do PHP: 7.3.27
 
@@ -64,6 +64,22 @@ CREATE TABLE `produtos` (
   `Categoria` int(11) NOT NULL,
   `Ativo` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Extraindo dados da tabela `produtos`
+--
+
+INSERT INTO `produtos` (`ProdutoID`, `Nome`, `Descricao`, `Imagem`, `Preco`, `Categoria`, `Ativo`) VALUES
+(1, '1', '1', '1', 1, 1, 1),
+(0, 'Capivara Melancia', 'Uma capivara comendo melancia.', 'capivara_melancia01.jfif', 0, 1, 1),
+(0, 'Capivara Encarando', 'Uma capivara encarando.', 'capivara_encarando01.jpg', 8, 1, 1),
+(0, 'Gohan Calvo', 'Gohan sofrendo de Alopecia em estado avançado (irrecuperável).', 'gohan_calvo.jpg', 4, 1, 1),
+(0, 'Breier (Redcast Edition)', 'Gabriel Breier edição limitada do Redcast.', 'breier_redcast.webp', 499, 1, 1),
+(0, 'Um siri fazendo barra', 'Um siri fazendo barra.', 'siri_barra.webp', 9, 1, 1),
+(0, 'A Pedra (Classic)', 'Edição limitada clássica de A Pedra fazendo sua mais conhecida faceta.', 'a_pedra01.jpg', 1999, 1, 1),
+(0, 'Sigma Picture 01', 'Primeira pictura relatada capturada de um sigma em seu habitat natural.', 'sigma01.webp', 49, 1, 1),
+(0, 'Gato calvo (calvo)', 'Um gato calvado.', 'gato_calvo.jpg', 24, 1, 1),
+(0, 'Cachorro calvo (calvo)', 'Um cachorro calvado.', 'cachorro_calvo.jpg', 29, 1, 1);
 
 --
 -- Índices para tabelas despejadas
